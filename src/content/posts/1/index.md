@@ -13,3 +13,6 @@ draft: false
 https://astro.build/
 ## 使用Fuwari主题
 https://github.com/saicaca/fuwari
+
+头像
+![头像](./txt.png)
