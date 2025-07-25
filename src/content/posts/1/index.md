@@ -1,10 +1,10 @@
 ---
-title: 你好！Astro for Fuwari
+title: 你好！Astro & Fuwari
 published: 2024-04-01
 description: "How to use this blog template."
 image: "./cover.jpeg"
-tags: ["Fuwari", "Astro"]
-category: Guides
+tags: ["Astro"]
+category: 博客
 draft: false
 ---
 
