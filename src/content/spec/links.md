@@ -1,7 +1,7 @@
 # 友情链接
 
-欢迎来到我的友情链接页面，以下是支持和推荐的优秀站点！
----
+**欢迎来到我的友情链接页面，以下是支持和推荐的优秀站点！**
+
 <style>
   .friend-link-card {
     display: flex;
@@ -14,7 +14,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 10px; /* 减少底部间距 */
+    margin-bottom: 5px; /* 减少底部间距 */
   }
   
   .friend-link-avatar {
@@ -110,7 +110,9 @@
   </div>
 
 </div>
+
 ---
+
 # 互换友链格式如下：
 暂时不会整Astro评论，换友链
 [发送邮件](mailto:skyvale@163.com?subject=互换友链&body=名称\n图标\n简介\n链接)
