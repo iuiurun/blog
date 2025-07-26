@@ -1,5 +1,5 @@
 # 友情链接
- 
+
 欢迎来到我的友情链接页面，以下是支持和推荐的优秀站点！
 
 ---
@@ -8,7 +8,7 @@
   <!-- 第一个卡片 -->
   <div style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 10px; width: 360px; height: 90px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; box-sizing: border-box;">
     <a href="https://blog.094521.xyz/" target="_blank" rel="noopener noreferrer" style="margin-right: 10px; flex-shrink: 0; display: block;">
-      <img src="https://pc.094521.xyz/favicon.jpg" alt="ドリームトレイン Blog 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
+      <img src="https://pc.094521.xyz/favicon.jpg" alt="ドリームトレイン Blog 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;" onclick="event.preventDefault()">
     </a>
     <div style="flex-grow: 1; overflow: hidden;">
       <a href="https://blog.094521.xyz/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333; display: block;">
@@ -21,7 +21,7 @@
   <!-- 第二个卡片 -->
   <div style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 10px; width: 360px; height: 90px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; box-sizing: border-box;">
     <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="margin-right: 10px; flex-shrink: 0; display: block;">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;" onclick="event.preventDefault()">
     </a>
     <div style="flex-grow: 1; overflow: hidden;">
       <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333; display: block;">
@@ -34,7 +34,7 @@
   <!-- 第三个卡片 -->
   <div style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 10px; width: 360px; height: 90px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); overflow: hidden; box-sizing: border-box;">
     <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" style="margin-right: 10px; flex-shrink: 0; display: block;">
-      <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d71519" alt="Stack Overflow 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
+      <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d71519" alt="Stack Overflow 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;" onclick="event.preventDefault()">
     </a>
     <div style="flex-grow: 1; overflow: hidden;">
       <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333; display: block;">
