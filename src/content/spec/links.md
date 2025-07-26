@@ -1,7 +1,6 @@
 # 友情链接
 
 欢迎来到我的友情链接页面，以下是支持和推荐的优秀站点！
-
 ---
 <style>
   .friend-link-card {
@@ -72,7 +71,7 @@
   <!-- 第一个卡片 -->
   <div class="friend-link-card">
     <a href="https://blog.094521.xyz/" target="_blank" rel="noopener noreferrer" class="friend-link-avatar">
-      <img src="https://pc.094521.xyz/favicon.jpg" alt="ドリームトレイン Blog 的 Logo" onclick="event.preventDefault();">
+      <img src="https://pc.094521.xyz/favicon.jpg" alt="ドリームトレイン Blog 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
     </a>
     <div class="friend-link-content">
       <a href="https://blog.094521.xyz/" target="_blank" rel="noopener noreferrer">
@@ -85,7 +84,7 @@
   <!-- 第二个卡片 -->
   <div class="friend-link-card">
     <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="friend-link-avatar">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub 的 Logo" onclick="event.preventDefault();">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
     </a>
     <div class="friend-link-content">
       <a href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -98,7 +97,7 @@
   <!-- 第三个卡片 -->
   <div class="friend-link-card">
     <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" class="friend-link-avatar">
-      <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d71519" alt="Stack Overflow 的 Logo" onclick="event.preventDefault();">
+      <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d71519" alt="Stack Overflow 的 Logo" style="width: 36px; height: 36px; border-radius: 50%; display: block; cursor: pointer;">
     </a>
     <div class="friend-link-content">
       <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">
@@ -111,29 +110,33 @@
 </div>
 
 <script>
-// 确保所有图片点击时都跳转到链接
+// 确保所有链接在新窗口打开，并且阻止图片放大
 document.addEventListener('DOMContentLoaded', function() {
-  const links = document.querySelectorAll('.friend-link-avatar');
+  // 选择所有带有 href 和 target="_blank" 的链接
+  const links = document.querySelectorAll('a[href][target="_blank"]');
   
   links.forEach(link => {
     const img = link.querySelector('img');
     if (img) {
-      // 确保图片不会触发默认行为
-      img.addEventListener('click', function(e) {
+      // 阻止图片默认行为（放大）
+      img.addEventListener('touchstart', function(e) {
         e.preventDefault();
-        e.stopPropagation();
-        window.open(link.href, link.target || '_self');
       });
       
       // 阻止长按菜单
       img.addEventListener('contextmenu', function(e) {
         e.preventDefault();
       });
+      
+      // 确保点击图片时触发链接跳转
+      img.addEventListener('click', function(e) {
+        e.stopPropagation();
+        window.open(link.href, '_blank');
+      });
     }
   });
 });
 </script>
-
 ---
 # 互换友链格式如下：
 暂时不会整Astro评论，换友链
