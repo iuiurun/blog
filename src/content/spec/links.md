@@ -14,7 +14,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* 减少底部间距 */
   }
   
   .friend-link-avatar {
@@ -68,7 +68,7 @@
   }
 </style>
 
-<div class="friend-links-container" style="display: flex; flex-wrap: wrap; gap: 20px 30px;">
+<div class="friend-links-container" style="display: flex; flex-wrap: wrap; gap: 10px 15px;"> <!-- 减少横向间距 -->
 
   <!-- 第一个卡片 -->
   <div class="friend-link-card">
