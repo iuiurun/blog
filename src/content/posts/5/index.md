@@ -2,7 +2,7 @@
 title: 我的博客访问优化：国内优选 EdgeOne、国外 Cloudflare 智能分流
 published: 2025-07-27
 description: "Astro 博客全球加速方案 —— 华为云解析分流 + EdgeOne（国内）与 Cloudflare（国外）部署"
-image: "./图片"
+image: "./155555.png"
 tags: ["Astro"]
 category: 博客
 draft: false
