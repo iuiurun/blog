@@ -1,6 +1,6 @@
 ---
 title: 我私藏的 7个 GitHub 文件加速网站，告别下载龟速
-published: 2025-07-27
+published: 2025-07-27T10:30:28
 description: 别再等加载了！7个亲测好用的 GitHub 文件加速网站，我整理好了
 image: "./shi27.png"
 tags: [github]

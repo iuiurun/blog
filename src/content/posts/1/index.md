@@ -16,3 +16,17 @@ https://github.com/saicaca/fuwari
 
 头像
 ![头像](./txt.png)
+
+
+## 创建文章
+```
+---
+title: 标题
+published: 2024-04-01T10:30:00
+description: "描述"
+image: "./图片.png"
+tags: ["标签"]
+category: 分类
+draft: false
+---
+```
