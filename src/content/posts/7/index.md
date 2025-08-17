@@ -25,4 +25,7 @@ realme 自带系统安装器有广告扰人，安装速度慢，还严格限制�
 
 [https://www.123pan.com/s/2dADVv-OjPJH.html](https://www.123pan.com/s/2dADVv-OjPJH.html)
 
+### 备用下载：
+[http://4275.com/54sdyp](http://4275.com/54sdyp)
+
 如果想下载其他安卓版本的CrossProfileTestApp，请在浏览器 搜索“兼容性测试套件”
