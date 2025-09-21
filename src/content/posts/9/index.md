@@ -62,37 +62,22 @@ draft: false
   - 6.8元 20GB 不限时
     ![网际快车](./wangjikuaiche.png)
 
+---
+
 # 客户端推荐（全平台）
 
 ![clashmi](./clashmi.png)
 
-## Android
-
-[☛高速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "clashmi v1.0.9.134")
-
-[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "clashmi v1.0.9.134")
-
-## Windows
-
-[☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmi v1.0.9.134")
-
-[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmi v1.0.9.134")
-
-## Mac
-
-[☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_macos_universal.dmg "clashmi v1.0.9.134")
-
-[☛备用下载☚](https://apps.apple.com/us/app/clash-mi/id6744321968)
-
-## iOS
-
-[应用商店安装](https://apps.apple.com/us/app/clash-mi/id6744321968)
-
-免费安装。但软件只能在国外上架，所以需要自行注册一个海外AppleID, 如需国外AppleID 联系我。
-
-## Linux
-
-[☛点我下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_linux_amd64.rpm)
+| 平台    | 下载方式     | 链接                                                                                                                                        | 备注                                    |
+| ------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Android | 高速下载     | [☛高速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk) | clashmi v1.0.9.134                      |
+| Android | 备用下载     | [☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk)                        | clashmi v1.0.9.134                      |
+| Windows | 加速下载     | [☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe)       | clashmi v1.0.9.134                      |
+| Windows | 备用下载     | [☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe)                              | clashmi v1.0.9.134                      |
+| Mac     | 加速下载     | [☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_macos_universal.dmg)   | clashmi v1.0.9.134                      |
+| Mac     | 备用下载     | [☛备用下载☚](https://apps.apple.com/us/app/clash-mi/id6744321968)                                                                            | clashmi v1.0.9.134                      |
+| iOS     | 应用商店安装 | [应用商店安装](https://apps.apple.com/us/app/clash-mi/id6744321968)                                                                            | 免费安装。需海外AppleID，如需可联系我。 |
+| Linux   | 官方下载     | [☛点我下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_linux_amd64.rpm)                              | clashmi v1.0.9.134                      |
 
 ---
 
