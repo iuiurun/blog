@@ -7,7 +7,6 @@ tags: ["机场"]
 category: 分享
 draft: false
 ---
-
 # 2024年机场推荐与全平台客户端使用分享
 
 随着网络环境的变化，选择一个稳定、高性价比的机场服务商变得尤为重要。本文将分享我目前亲测推荐的机场服务，以及适合各平台的客户端选择建议。
@@ -65,23 +64,25 @@ draft: false
 
 # 客户端推荐（全平台）
 
+![clashmi](./clashmi.png)
+
 ## Android
 
-[☛高速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "v1.0.9.134")
+[☛高速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "clashmi v1.0.9.134")
 
-[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "v1.0.9.134")
+[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_android_arm64-v8a.apk "clashmi v1.0.9.134")
 
 ## Windows
 
-[☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmiv1.0.9.134")
+[☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmi v1.0.9.134")
 
-[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmiv1.0.9.134")
+[☛备用下载☚](https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_windows_x64.exe "clashmi v1.0.9.134")
 
 ## Mac
 
 [☛加速下载☚](https://git.282888.xyz/https://github.com/KaringX/clashmi/releases/download/v1.0.9.134/clashmi_1.0.9.134_macos_universal.dmg "clashmi v1.0.9.134")
 
-[☛备用下载☚]()
+[☛备用下载☚](https://apps.apple.com/us/app/clash-mi/id6744321968)
 
 ## iOS
 
