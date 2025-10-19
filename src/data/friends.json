@@ -1,0 +1,23 @@
+[
+  {
+    "name": "PCB",
+    "url": "https://pcb.im/",
+    "avatar": "https://pcb.im/favicon.ico",
+    "desc": "个人博客 / 技术随笔",
+    "featured": false
+  },
+  {
+    "name": "二叉树树的博客",
+    "url": "https://example1.test/",
+    "avatar": "https://q2.qlogo.cn/headimg_dl?dst_uin=3672492995&spec=5",
+    "desc": "爱你所爱～ ♥",
+    "featured": false
+  },
+  {
+    "name": "qwwshs",
+    "url": "https://qwwshs.example/",
+    "avatar": "https://cdn.example.com/avatars/qwwshs.png",
+    "desc": "这是qwwshs的个人博客",
+    "featured": true
+  }
+]
