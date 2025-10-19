@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+/*
+  改动点：
+  - 使用顶层 await 动态导入 JSON，这样在 SSR 阶段如果 JSON 缺失或语法错误能被捕获并输出友好提示；
+  - friends 是一个数组（默认空数组），页面逻辑和你已有样式保持一致。
+*/
+let friends = [];
+try {
+  // 动态导入以便在开发时更好地处理缺失/语法错误
+  const mod = await import("../data/friends.json");
+  friends = mod.default ?? mod;
+  if (!Array.isArray(friends)) {
+    console.warn("src/data/friends.json loaded but is not an array. Using empty array.");
+    friends = [];
+  }
+} catch (err) {
+  // 捕获并输出错误信息，避免 dev 时报错中断
+  console.warn("Could not load src/data/friends.json:", err.message || err);
+  friends = [];
+}
+---
+<Layout title="友情链接" description="友情链接页面">
+  <main class="max-w-[var(--page-width)] mx-auto py-12 px-6">
+    <section class="rounded-2xl bg-white/5 dark:bg-[#0b1116] p-8 shadow-sm">
+      <header class="flex items-start gap-4 mb-6">
+        <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-[rgba(255,255,255,0.03)] flex items-center justify-center">
+          <svg class="w-5 h-5 text-[var(--primary)]" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M10.59 13.41a1 1 0 010-1.41l3.17-3.17a1 1 0 011.41 0l1.41 1.41a1 1 0 010 1.41L13.41 14.82a1 1 0 01-1.41 0l-1.41-1.41z" fill="currentColor" opacity="0.9"/>
+            <path d="M7 17a4 4 0 01-4-4V6a4 4 0 014-4h6a4 4 0 014 4v7a4 4 0 01-4 4H7z" stroke="currentColor" stroke-width="0.6" opacity="0.6"/>
+          </svg>
+        </div>
+
+        <div>
+          <h1 class="text-2xl font-extrabold text-white">友情链接</h1>
+          <p class="mt-3 text-sm text-muted max-w-[60ch]">
+            欢迎来到我的友链页面！这里收录了一些优秀的博客和网站。<br />
+            如果你想要交换友链，请通过邮件或其他方式联系我。
+          </p>
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 space-y-6">
+          {friends.filter(f => !f.featured).map(f => (
+            <div class="flex items-start gap-4">
+              <img src={f.avatar} alt={f.name} class="w-12 h-12 rounded-full object-cover shadow-sm flex-shrink-0" loading="lazy" />
+              <div class="min-w-0">
+                <div class="flex items-center gap-3">
+                  <a class="text-lg font-semibold text-white truncate inline-flex items-center gap-2" href={f.url} target="_blank" rel="noopener noreferrer">
+                    <span>{f.name}</span>
+                    <svg class="w-4 h-4 text-[var(--primary)]" viewBox="0 0 24 24" fill="none" aria-hidden>
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="mt-1 text-sm text-muted truncate max-w-[48rem]">{f.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <aside class="flex flex-col justify-center">
+          {friends.filter(f => f.featured).map(f => (
+            <a href={f.url} target="_blank" rel="noopener noreferrer" class="block rounded-xl bg-[#1f2b35] dark:bg-[#18232b] p-4 shadow-md hover:shadow-lg transition">
+              <div class="flex items-center gap-4">
+                <img src={f.avatar} alt={f.name} class="w-14 h-14 rounded-full object-cover shadow-sm" loading="lazy" />
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-lg font-semibold text-[hsl(220 80% 92%)]">{f.name}</span>
+                    <svg class="w-4 h-4 text-[var(--primary)]" viewBox="0 0 24 24" fill="none" aria-hidden>
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="mt-1 text-sm text-muted">{f.desc}</div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </aside>
+      </div>
+
+      <section class="mt-8 rounded-xl bg-[#172630] dark:bg-[#0e1b22] p-6">
+        <h2 class="text-lg font-semibold text-white mb-3">申请友链</h2>
+
+        <div class="text-sm text-muted mb-4">
+          <strong>网站要求：</strong>
+          <ul class="list-disc list-inside mt-2 space-y-1">
+            <li>内容积极向上，无违法违规内容</li>
+            <li>网站可以正常访问</li>
+            <li>最好是技术类或个人博客</li>
+          </ul>
+        </div>
+
+        <div class="text-sm text-muted mb-4">
+          <strong>友链格式：</strong>
+        </div>
+
+        <pre class="rounded-md bg-[#0d1b23] dark:bg-[#07121a] p-4 overflow-auto text-sm text-[rgba(255,255,255,0.92)]">
+网站名称: fulie blog
+网站地址: https://pcb.im/
+网站描述:
+网站头像: https://q2.qlogo.cn/headimg_dl?dst_uin=3672492995&amp;spec=5
+        </pre>
+
+      </section>
+    </section>
+  </main>
+</Layout>
